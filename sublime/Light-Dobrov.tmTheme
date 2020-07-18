@@ -5,7 +5,7 @@
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>name</key>
-	<string>Dobrov</string>
+	<string>Dobrov Light</string>
 	<key>semanticClass</key>
 	<string>theme.light.dobrov</string>
 	<key>settings</key>
@@ -31,13 +31,58 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Shell: DOT_FILES</string>
+			<key>scope</key>
+			<string>source.shell</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#1b1d20</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag text, Двойные (())</string>
+			<key>scope</key>
+			<string>
+					punctuation.section.arithmetic.begin.shell
+					, punctuation.section.arithmetic.end.shell
+            </string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#0096C8</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Punctuation Точка ;,</string>
+			<key>scope</key>
+			<string>
+			punctuation.accessor - meta.preprocessor
+      , punctuation.separator - meta.preprocessor
+            </string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#b00070</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Comment</string>
 			<key>scope</key>
 			<string>comment</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#4e814e</string>
+				<string>#646d64</string>
 			</dict>
 		</dict>
 		<dict>
@@ -49,19 +94,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#2AA185</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>StringNumber</string>
-			<key>scope</key>
-			<string>string</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#00640b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -88,18 +120,20 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Variable</string>
+			<string>Variable @</string>
 			<key>scope</key>
 			<string>variable.language, variable.other</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
 				<key>foreground</key>
-				<string>#234FA1</string>
+				<string>#a75e15</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Keyword</string>
+			<string>Keyword Сложение, ampersand, pipe</string>
 			<key>scope</key>
 			<string>keyword</string>
 			<key>settings</key>
@@ -151,19 +185,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Variable start</string>
-			<key>scope</key>
-			<string>punctuation.definition.variable</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>bold</string>
-				<key>foreground</key>
-				<string>#0634da</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Embedded code markers</string>
 			<key>scope</key>
 			<string>punctuation.section.embedded.begin, punctuation.section.embedded.end</string>
@@ -197,13 +218,15 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>User-defined constant</string>
+			<string>User-defined constant, sharp, slash</string>
 			<key>scope</key>
 			<string>constant.character, constant.other</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string></string>
 				<key>foreground</key>
-				<string>#CB4B16</string>
+				<string>#0030CF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -229,7 +252,7 @@
 				<key>fontStyle</key>
 				<string> bold</string>
 				<key>foreground</key>
-				<string>#48446B</string>
+				<string>#700574</string>
 			</dict>
 		</dict>
 		<dict>
@@ -239,8 +262,10 @@
 			<string>entity.name.tag</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string></string>
 				<key>foreground</key>
-				<string>#00803B</string>
+				<string>#0030b0</string>
 			</dict>
 		</dict>
 		<dict>
@@ -342,11 +367,29 @@
 			<key>scope</key>
 			<string>invalid</string>
 			<key>settings</key>
-			<dict/>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#e7cabd</string>
+			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Двойные кавычки</string>
+			<string>Main operator</string>
+			<key>scope</key>
+			<string>keyword - keyword.operator</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#2A49D2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>В двойных кавычках</string>
 			<key>scope</key>
 			<string>string.quoted.double</string>
 			<key>settings</key>
@@ -354,7 +397,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#6d2070</string>
+				<string>#853B00</string>
 			</dict>
 		</dict>
 		<dict>
@@ -367,7 +410,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#704800</string>
+				<string>#0d6414</string>
 			</dict>
 		</dict>
 		<dict>
@@ -383,7 +426,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Keyword Operator</string>
+			<string>Mathematic Operator ()</string>
 			<key>scope</key>
 			<string>
 				punctuation.definition - meta.preprocessor - comment
@@ -396,12 +439,12 @@
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#000080</string>
+				<string>#2040a0</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Illegal</string>
+			<string>Illegal end NUM</string>
 			<key>scope</key>
 			<string>invalid.illegal
             </string>
@@ -413,7 +456,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Meta Function</string>
+			<string>Meta Function двойные [[</string>
 			<key>scope</key>
 			<string>keyword.analysis.matlab
                 , meta.function.call
@@ -426,14 +469,14 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string>bold italic</string>
 				<key>foreground</key>
 				<string>#8f4be0</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>StorageIf</string>
+			<string>Storage If declare</string>
 			<key>scope</key>
 			<string>storage.modifier
                 , storage.type - meta.function.python - storage.type.class.python - meta.preprocessor
@@ -441,45 +484,56 @@
             </string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
 				<key>foreground</key>
 				<string>#8000FF</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Punctuation;</string>
+			<string>Variable start - Dollar</string>
 			<key>scope</key>
-			<string>
-			punctuation.accessor - meta.preprocessor
-      , punctuation.separator - meta.preprocessor
-            </string>
+			<string>punctuation.definition.variable</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#0658c4</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Variable Переменные</string>
+			<key>scope</key>
+			<string>variable.other
+				, variable.language.php
+			</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#ca010b</string>
+				<string>#657835</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Punctuation()</string>
+			<string>StringNumber значение переменных</string>
 			<key>scope</key>
-			<string>
-					punctuation.section.arithmetic.begin.shell,
-					punctuation.section.arithmetic.end.shell,
-            </string>
+			<string>string</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#404050a0</string>
+				<string>#61468F</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Punctuation-arithmetic</string>
+			<string>Переменные в цикле, скобках</string>
 			<key>scope</key>
 			<string>
 				meta.group.arithmetic.shell
@@ -662,19 +716,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#29B020</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JS: Function argument</string>
-			<key>scope</key>
-			<string>variable.parameter</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>normal</string>
-				<key>foreground</key>
-				<string>#700574</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1097,19 +1138,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#BD3800</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>PHP: Variable</string>
-			<key>scope</key>
-			<string>variable.language.php, variable.other</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string> bold</string>
-				<key>foreground</key>
-				<string>#993838</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1828,19 +1856,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#BD3800</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Shell: DOT_FILES</string>
-			<key>scope</key>
-			<string>source.shell</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#1b1d20</string>
 			</dict>
 		</dict>
 		<dict>
